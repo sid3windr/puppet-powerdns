@@ -60,6 +60,11 @@
 <% if @forward_zones %>forward-zones=<%= forward_zones %><% else %># forward-zones=<% end %>
 
 #################################
+# forward-zones-recurse	Zones for which we forward queries with recursion, comma separated domain=ip pairs
+#
+<% if @forward_zones_recurse %>forward-zones-recurse=<%= forward_zones_recurse %><% else %># forward-zones-recurse=<% end %>
+
+#################################
 # hint-file	If set, load root hints from this file
 #
 <% if @hint_file %>hint-file=<%= hint_file %><% else %># hint-file=<% end %>

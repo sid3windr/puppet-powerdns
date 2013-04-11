@@ -11,7 +11,8 @@ class powerdns::recursor (
   $delegation_only = undef, # string
   $export_etc_hosts = undef, # on/off
   $fork = undef, # yes/no
-  $forward_zones = undef, # array
+  $forward_zones = undef, # string
+  $forward_zones_recurse = undef, # string
   $hint_file = undef, # string
   $local_address = undef, # array
   $local_port = undef, # int
@@ -75,4 +76,3 @@ class powerdns::recursor (
     require => Package['pdns-recursor']
   }
 }
-
